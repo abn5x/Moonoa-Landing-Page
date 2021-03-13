@@ -1,0 +1,62 @@
+.download {
+  h2 {
+    padding: 1rem;
+  }
+
+  .download-container {
+    display: grid;
+    padding: 2rem 0;
+    background-color: $dark-gray;
+    grid-template-columns: 1fr minmax(100px, 200px) minmax(100px, 200px) 1fr;
+    grid-template-rows: auto auto auto;
+    grid-template-areas:
+      ". d1 d2 ."
+      ". l1 l2 ."
+      ". b1 b2 .";
+    gap: 1rem 2rem;
+    img {
+      display: block;
+      height: 100%;
+    }
+    .button {
+      text-transform: uppercase;
+      margin: auto;
+      width: 100%;
+      max-width: 100px;
+      padding: 1rem 0.5rem;
+    }
+    div {
+      &:nth-of-type(1) {
+        grid-area: d1;
+      }
+      &:nth-of-type(2) {
+        grid-area: d2;
+      }
+      &:nth-of-type(3) {
+        background-color: $turquese;
+        grid-area: b1;
+      }
+      &:nth-of-type(4) {
+        background-color: $coral;
+        grid-area: b2;
+      }
+    }
+    a {
+      font-size: 10pt;
+      text-decoration: none;
+      color: white;
+      &:nth-of-type(1) {
+        grid-area: l1;
+      }
+      &:nth-of-type(2) {
+        grid-area: l2;
+      }
+    }
+    .download__col {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      max-width: 200px;
+    }
+  }
+}

@@ -1,0 +1,23 @@
+body {
+  font-family: "Red Hat Display";
+  font-weight: $regular;
+  text-align: center;
+}
+main {
+  max-width: 1200px;
+  margin: auto;
+}
+h1 {
+  font-size: 26pt;
+  font-weight: $bold;
+}
+
+h2 {
+  font-size: 17pt;
+  font-weight: $bold;
+}
+
+p {
+  font-size: 14pt;
+  font-weight: $regular;
+}
